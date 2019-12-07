@@ -1,0 +1,85 @@
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url("slide1a.jpg");
+}
+.slide2 {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url("slider2a.jpg");
+}
+.slide3 {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url("slider3a.jpg");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+.btn1{
+    float: right;
+    background: none;
+    border: 2px solid darkorange;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    margin: 12px;
+    border-radius: 25px;
+}
+.btn1:hover
+{
+    
+    background-color: darkorange;
+    transition: all 0s ease-in;
+}
+
